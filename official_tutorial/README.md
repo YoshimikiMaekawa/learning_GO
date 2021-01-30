@@ -15,6 +15,13 @@ go build
 go test
 ```
 ***
+### packageをinstallする
+```go
+go install
+```
++ このコマンドで，packageをインストールしたら，package名をコマンドラインで実行するだけで処理が開始される．
+    + つまり，このtutorialの場合`hello`と打って実行すると，`main()`が実行される．
+***
 ## 基本文法
 ### 変数の宣言
 ```go
