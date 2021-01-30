@@ -177,4 +177,11 @@ func TestTestName(t *testing.T) {
 }
 ```
 + 適当に書いていますが，理想の結果を`want`で宣言し，実際の結果と比較する，みたいなプロセスを踏むみたいな感じかな...？
++ 理想の結果の表現に正規表現を使用することもできる．正規表現を使用する場合は，regexpパッケージを使用する．
+```go
+want := regexp.MustCompile(`ideal`)
+if !want.MatchString(value) {
+    t.Fatalf("debug message")
+}
+```
 ***
