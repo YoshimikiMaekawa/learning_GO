@@ -21,7 +21,7 @@ func main() {
 	fmt.Println(quote.Glass())
 
 	// Request a greeting message.
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Yoshimiki")
 
 	/*
 		If an error was returned, print it to the console and
