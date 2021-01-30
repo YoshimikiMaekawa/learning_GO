@@ -20,8 +20,16 @@ func main() {
 
 	fmt.Println(quote.Glass())
 
+	// A slice of names
+	names := []string{
+		"Gladys",
+		"Samantha",
+		"Darrin",
+		"Yoshimiki",
+	}
+
 	// Request a greeting message.
-	message, err := greetings.Hello("Yoshimiki")
+	messages, err := greetings.Hellos(names)
 
 	/*
 		If an error was returned, print it to the console and
@@ -31,5 +39,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(message)
+	fmt.Println(messages)
 }
