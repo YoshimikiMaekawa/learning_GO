@@ -11,10 +11,13 @@ go build
 
 ## 基本文法
 ### 関数の宣言
+#### 返り値が1つの場合
 ```go
-func func_name(member_name member_type) return_type {
-
-}
+func func_name(input_name input_type) return_type {}
+```
+#### 返り値が2つ以上の場合
+```go
+func func_name(input_name input_type) (return_type_1, return_type_2, ...) {}
 ```
 
 ### errorの処理
