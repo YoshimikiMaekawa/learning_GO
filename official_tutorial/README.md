@@ -41,6 +41,24 @@ array[N]
 len(array)
 ```
 
+### mapの処理
+#### mapの宣言
+```go
+map_name := make(map[key_type]value_type)
+```
+
+### for文
+#### rangeを使用した場合
+```go
+for index, value := range array {}
+```
+
+### if文
+#### 基本
+```go
+if hoge != fuga {}
+```
+
 ### 関数の宣言
 #### 返り値が1つの場合
 ```go
