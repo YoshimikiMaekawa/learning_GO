@@ -21,6 +21,8 @@ func func_name(input_name input_type) (return_type_1, return_type_2, ...) {}
 ```
 
 ### errorの処理
+標準装備のerrors moduleを使用する．
+'errors.New()'や'nil'の型は`error`なので注意．
 #### error ruturn
 ```go
 return "", errors.New("error message")
@@ -29,4 +31,19 @@ return "", errors.New("error message")
 `nil`をreturnすることで，callerは関数の処理が成功したことを知ることができる．
 ```go
 return return_value, nil
+```
+
+### logの処理
+標準装備のlog moduleを使用する．
+#### 接頭辞をつける
+```go
+log.SetPrefix("prefix")
+```
+#### フラグの初期化(?)
+```go
+log.SetFlags(0)
+```
+#### logをコンソールに表示し，プログラムを終了する
+```go
+log.Fatal("error message")
 ```
