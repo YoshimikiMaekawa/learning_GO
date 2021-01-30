@@ -52,6 +52,10 @@ map_name := make(map[key_type]value_type)
 ```go
 for index, value := range array {}
 ```
++ 二つある変数のうち，どちらかが必要なかったら，"_"で明示的に無視することができる
+```go
+for _, value := range array {}
+```
 
 ### if文
 #### 基本
