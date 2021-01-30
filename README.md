@@ -5,28 +5,54 @@ A learning repository of golang.
 + [Download and install](https://golang.org/doc/install)
 
 ## 基本コマンド
+### packageの実行
+packageがあるディレクトリに移動したうえで，
+```go
+go run .
+```
+または
+```go
+go run [package名]
+```
+***
 ### moduleを新規作成する
 ```go
 go mod init
 ```
 ***
-### `go.mod`の必要moduleを更新する(?)
+### packageのexeを作成
 ```go
 go build
 ```
 ***
-### 単体テストを実行する
+### test codeを実行する
 ```go
 go test
 ```
++ 末尾が`_test.go`のファイルに存在する関数を実行
 ***
 ### packageをinstallする
 ```go
 go install
 ```
-+ このコマンドで，packageをインストールしたら，package名をコマンドラインで実行するだけで処理が開始される．
-    + つまり，このtutorialの場合`hello`と打って実行すると，`main()`が実行される．
++ このコマンドで，packageをインストールしたら，package名をコマンドラインで実行するだけで処理が開始される
+    + コマンド化されるみたいな感じ...？．
 ***
+
+## プログラムのひな型
+```go
+// package名
+package hoge
+
+// moduleのimport
+import (
+    "fmt"
+)
+
+func main() {
+
+}
+```
 
 ## 基本文法
 ### 変数の宣言
