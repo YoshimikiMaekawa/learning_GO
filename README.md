@@ -170,8 +170,8 @@ init() {}
 ```go
 func TestTestName(t *testing.T) {
     want := ideal_value
-    value := Function()
-    if value == want {
+    value := TargetFunction()
+    if value != want {
         t.Fatalf("debug message")
     }
 }
